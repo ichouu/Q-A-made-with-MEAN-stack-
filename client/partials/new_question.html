@@ -1,0 +1,18 @@
+<div ng-controller="newQuestionsController">
+  <div class="nav">
+     <button type="submit"  ng-click="logout()">Logout</button>
+  </div>
+  <p ng-bind="errors.message"></p>
+  <div class="question">
+    <h1>New Question</h1>
+    <div ng-class="{ 'has-error' : userForm.question.$invalid && !userForm.question.$pristine }">
+            <label>Question:</label>
+            <textarea ng-model="new_question.question" rows="8" cols="40"></textarea>
+            <p ng-show="userForm.question.$invalid && !userForm.question.$pristine" class="help-block">A question is required.</p>
+    </div>
+    <div>
+      <label>Description:(optional) <textarea ng-model="new_question.description" rows="8" cols="40"></textarea></label>
+      <label><a ng-href="#/">Cancel</a><input type="submit" value="Submit" ng-click='addQuestion()'/></label>
+    </div>
+  </div>
+</div>

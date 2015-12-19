@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Black Belt Exam</title>
+  <script type="text/javascript" src='./javascript/libraries/angular.js'></script>
+		<script type="text/javascript" src='./javascript/libraries/angular-route.js'></script>
+		<script type="text/javascript" src="./javascript/app.js"></script>
+		<script type="text/javascript" src="./javascript/factories/answerFactory.js"></script>
+		<script type="text/javascript" src="./javascript/factories/homeFactory.js"></script>
+		<script type="text/javascript" src="./javascript/factories/new_answerFactory.js"></script>
+		<script type="text/javascript" src="./javascript/factories/newQuestionFactory.js"></script>
+		<script type="text/javascript" src="./javascript/controllers/answersController.js"></script>
+		<script type="text/javascript" src="./javascript/controllers/homesController.js"></script>
+		<script type="text/javascript" src="./javascript/controllers/newQuestionsController.js"></script>
+		<script type="text/javascript" src="./javascript/controllers/new_answersController.js"></script>
+		<script type="text/javascript" src='./javascript/libraries/jquery.js'></script>
+  <script type="text/javascript">
+    var person = prompt("Please enter your name");
+  </script>
+</head>
+<body ng-app="questions">
+  <a href="#/">Home</a> | <a href="#/new_question">Add a Question</a>
+  <div ng-view="">
+  </div>
+</body>
+</html>
