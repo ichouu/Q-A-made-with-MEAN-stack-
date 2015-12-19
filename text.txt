@@ -1,0 +1,2 @@
+ip address: 52.33.219.201
+website c2: http://ec2-52-33-219-201.us-west-2.compute.amazonaws.com/#/
